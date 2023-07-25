@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="whatsapp_box">
+        <div class="_header">
+          <div class="top_header_content">
+            <h5>WhatsApp</h5>
+            <div class="top_right_icons">
+              <i class="fa fa-camera"></i>
+              <i class="fa fa-search"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+          <div class="bottom_header_content">
+            <button id="user"><i class="fa fa-users"></i></button>
+            <button class="active" id="chats">Chats</button>
+            <button id="status">Status</button>
+            <button id="calls">Calls</button>
+          </div>
+        </div>
+
+        <div class="screen">
+          <!-- Chats start -->
+          <div class="contact_list">
+            <ul class="user_contact_list">
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-Ymkuel1lmldLDv_KAZKkYs6Tk7LJuXr0Q&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Ankit Jangir</h5>
+                  <small>hackerRank kiya kya ?</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">10:00 am</small>
+                  <small class="count">14</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://xyzshayari.com/wp-content/uploads/2022/05/cute-girl-dp-1024x1024.png"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Area Gautam</h5>
+                  <small>Kkothyanggiman Namgigo Gatdanda</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">8:45 am</small>
+                  <small class="count">2</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ05djZ0bIb21dCat3HSbJAarYnt9dEPGoEqg&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Aniket Kashyap</h5>
+                  <small>How are you?</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">7:02 pm</small>
+                  <small class="count">5</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmrn7DUJeOSklCzcmewrV3z1vNjEWvtFYrVg&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Anajli</h5>
+                  <small>Doc ko dikha lo </small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">5:30 pm</small>
+                  <small class="count">2</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://cdn.statusqueen.com/dpimages/thumbnail/Boy_Stylish__Dp_Image-2277.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Aman</h5>
+                  <small>Kuch kuch hota hai Anjali</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">5:04 pm </small>
+                  <small class="count">1</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkxFu-M-m_GTn90DdLd27mB--KL-4ei1BViA&usqp=CAU"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Mitali</h5>
+                  <small>bas aaj last hai</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">4:55 pm</small>
+                  <small class="count">6</small>
+                </div>
+              </li>
+
+              <li>
+                <div class="profile_section">
+                  <img
+                    src="https://e0.pxfuel.com/wallpapers/988/257/desktop-wallpaper-black-dp-dark-whatsapp-dp-couple-dp.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="contact_section">
+                  <h5>Gadhi</h5>
+                  <small>ye hi ek sahi mili</small>
+                </div>
+                <div class="msg_counter">
+                  <small class="time">3:45 pm</small>
+                  <small class="count">2</small>
+                </div>
+              </li>
+            </ul>
+
+            <button class="chatBtns">
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </button>
+          </div>
+          <!-- Chats end -->
+
+          <!-- Status CODE start -->
+          <div class="status_area">
+            <!-- <h5>Status Update</h5> -->
+            <ul>
+              <li>
+                <div class="my_status">
+                  <img
+                    src="https://cdn.statusqueen.com/dpimages/thumbnail/dp%20image58-681.jpg"
+                    alt=""
+                  />
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="status_contact">
+                  <h5>My status</h5>
+                  <p>Tap to add status update</p>
+                </div>
+              </li>
+
+              <p class="statusTxt">recent updates</p>
+
+              <li>
+                <div class="my_status recent">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEh5yYBULLWnDvK148fjAvazgT01KwBR4A71XYYrMzcYfLDLqp72VmBV-A_eUAyNvQvPHbVj5Ga8pLDB5RR5FslIL-pCNaA2a2mE5ibmFEBEn9Vj8I9nR9mIx9Fgov9vGKyBInBSngwUt-vIW1X8aXjQCXHrSbiBWAcpDDpbTfLj5ALNWR71mGzGIiDp=w640-h454"
+                    alt=""
+                  />
+                </div>
+                <div class="status_contact">
+                  <h5>Manav Himadri</h5>
+                  <p>Yesterday, 10:38 pm</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="my_status recent">
+                  <img
+                    src="https://fullhdstatus.com/wp-content/uploads/2021/11/photostudio_1635860124615-450x450.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="status_contact">
+                  <h5>Meena Chudail</h5>
+                  <p>Yesterday, 05:06 pm</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="my_status recent">
+                  <img
+                    src="https://www.mynameart.com/pics/good-morning-quotes-demo.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="status_contact">
+                  <h5>Mami</h5>
+                  <p>Yesterday, 08:16 am</p>
+                </div>
+              </li>
+
+              <p class="statusTxt">Viewed Updates</p>
+
+              <li>
+                <div class="my_status viewed">
+                  <img
+                    src="https://whatsappstatusline.com/wp-content/uploads/2021/12/Hindi-Love-Romantic-Whatsapp-Status-Video-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="status_contact">
+                  <h5>Mehak Chahal</h5>
+                  <p>Yesterday, 05:30 pm</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="status_btns">
+              <div class="block_Btns">
+                <button><i class="fa fa-pencil"></i></button>
+                <button><i class="fa fa-camera"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Status code end -->
+
+          <!-- Calls code start-->
+          <div class="calls_area">
+            <ul>
+              <li>
+                <div class="icon_call">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </div>
+
+                <div class="call_link">
+                  <h5>Create call link</h5>
+                  <small>Share a link for your WhatsApp call</small>
+                </div>
+              </li>
+
+              <p class="statusTxt">Recent</p>
+              <li>
+                <div class="call_img">
+                  <img
+                    src="https://cdn.statusqueen.com/dpimages/thumbnail/dp_images_8-1279.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="call_link">
+                  <h5>Avinash Yadav</h5>
+                  <small
+                    ><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    10 March, 6:09 pm</small
+                  >
+                </div>
+
+                <i
+                  class="fa fa-video-camera calling_icon"
+                  aria-hidden="true"
+                ></i>
+              </li>
+
+              <li>
+                <div class="call_img">
+                  <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyZcaLIYHVZ5TMs_dMmNTrl_qL80VXOIXXiw1jV07jzwlj7xoRqceDCAdxzK32yNNwch4O1bT1NHZvloci8MbxCfKAQO26-X9nzpCNNueylC5ZWj7KFvJlwkymTJQG4d6Kw8AJwuXV3Pk1Rqajz1_POtNb9UsLUbZvpzsZTIyvo9T6wDv36O1eenYn3w/s720/inhindi.co.in.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="call_link">
+                  <h5>Aman Sharma</h5>
+                  <small
+                    ><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 10
+                    March, 6:09 pm</small
+                  >
+                </div>
+
+                <i class="fa fa-phone calling_icon" aria-hidden="true"></i>
+              </li>
+
+              <li>
+                <div class="call_img">
+                  <img
+                    src="https://reviewchain.com/wp-content/uploads/2015/04/image_20150424_130012_4.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="call_link">
+                  <h5>Arun Sharma</h5>
+                  <small
+                    ><i class="fa fa-long-arrow-left" aria-hidden="true"></i> 10
+                    March, 6:09 pm</small
+                  >
+                </div>
+
+                <i class="fa fa-phone calling_icon" aria-hidden="true"></i>
+              </li>
+
+              <li>
+                <div class="call_img">
+                  <img
+                    src="https://www.lovesove.com/wp-content/uploads/2021/06/Girls-Dp-Original-Lovesove.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="call_link">
+                  <h5>Ankit</h5>
+                  <small
+                    ><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    10 March, 6:09 pm</small
+                  >
+                </div>
+
+                <i
+                  class="fa fa-video-camera calling_icon"
+                  aria-hidden="true"
+                ></i>
+              </li>
+            </ul>
+
+            <button class="call_btns">
+              <i class="fa fa-phone"></i>
+            </button>
+          </div>
+          <!-- calls code end -->
+
+          <!-- community -->
+          <div class="community_area">
+            <ul>
+              <li>
+                <div class="community_icon">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+                <div class="text_community">
+                  <h5>New community</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- community -->
+        </div>
+
+        <div class="contact_chat_area">
+          <div class="header_contact">
+            <div class="profile_contact">
+              <i class="fa fa-arrow-left"></i>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-Ymkuel1lmldLDv_KAZKkYs6Tk7LJuXr0Q&usqp=CAU"
+                alt=""
+                srcset=""
+                width="30px"
+              />
+            </div>
+            <div class="contact_name">
+              <h5>Ankit Jangir</h5>
+              <small>online</small>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="chat_screen">
+            <div class="chat_">
+              <p class="left_chat">
+                This is left chat
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+              <p class="left_chat">
+                This is left chat Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At vitae ab facilis perferendis accusamus
+                fugiat repellat molestiae id deserunt voluptates, modi
+                voluptatibus temporibus velit et ex! Vitae enim libero atque?
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+              <p class="left_chat">
+                This is left chat
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+              <p class="left_chat">
+                This is left chat
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+              <p class="left_chat">
+                This is left chat
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+              <p class="left_chat">
+                This is left chat
+              </p>
+              <p class="right_chat">
+                This is right chat
+              </p>
+            </div>
+          </div>
+
+          <div class="input_">
+            <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+            <input type="text" placeholder="Message" />
+            <div class="more_icons">
+              <i class="fa fa-paperclip" aria-hidden="true"></i>
+              <i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i>
+              <i class="fa fa-camera" aria-hidden="true"></i>
+            </div>
+            <button class="mic">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
